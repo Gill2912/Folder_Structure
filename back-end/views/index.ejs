@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% let counter = 0 %>
+    <p><h2>Welcome to the <%= title %></h2></p>
+    <p><ul>
+    <% for (var i =0; i < students.length; i++) { %>
+      <li><a href="http://localhost:3002/api/student/<%= students[i]._id %>"><%= students[i].fname + ' ' + students[i].lname %></a></li>
+   <% } %>
+  </ul></p>
+  <script src="myjs.js"></script>
+  </body>
+
+</html>
